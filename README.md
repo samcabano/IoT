@@ -9,6 +9,14 @@ Complete collection: [Unit 2 Repository](https://github.com/samcabano/IoT)
 #### IoT and Networking
    - [Step Counter](link): description
 
+## Analysis and Reflection
+
+Enter Summary Here
+
+```python
+Enter sample code here
+```
+
 <h3 align="center">
   <a href="https://samcabano.github.io/cabano-profile/">Return to ABOUT ME</a>
 </h3>
