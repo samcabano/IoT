@@ -13,12 +13,25 @@ Complete collection: [Unit 2 Repository](https://github.com/samcabano/IoT)
 
 The internet of things is the foundation of connectivity in modern society. In that, its value is tremendous, as anything can be programmable, generate data, or become automated. To demonstrate this on a micro-scale, the Python Fundamentals course explored the many functions of the mesh network created by micro:bit. By displaying the expansive possibilities of the micro:bit, we are only scratching the surface of IoT. 
 
-By creating a Step Counter, I was able to use existing code from [micro:bit's website](https://microbit.org/en/2018-02-13-iet-lessons-11/) to create a slightly more dynamic program that allows sensory and tactile input, with auditory and visual output. To complete this project, I utilized Microsoft's MakeCode For Micro:bit website to produce a JavaScript file. 
+By creating a Step Counter, I was able to use existing code from [micro:bit's website](https://microbit.org/en/2018-02-13-iet-lessons-11/) to create a slightly more dynamic program that allows sensory and tactile input, with auditory and visual output. To complete this project, I utilized Microsoft's MakeCode For Micro:bit website to produce a JavaScript file:
 
 <img src="Make_Code.png" align="center" style="margin: 10px"> 
 
-```python
-Enter sample code here
+#### Sample Output:
+```javascript
+// micro:bit template code increases step by 1 each shake
+input.onGesture(Gesture.Shake, function () {
+    steps += 1
+    miles += steps / 2000
+    if (steps == 10000) {  // plays a tone when user reaches 10,000 steps
+        music.playTone(262, music.beat(BeatFraction.Whole))
+    }
+
+// always shows step count
+basic.forever(function () {
+    basic.showNumber(steps)
+})
+})
 ```
 
 <h3 align="center">
