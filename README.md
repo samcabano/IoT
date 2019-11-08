@@ -5,8 +5,6 @@ Complete collection: [Unit 2 Repository](https://github.com/samcabano/IoT)
 
 #### MicroPython Introduction
    - [MicroPython](https://github.com/samcabano/IoT/blob/master/Micro:bit/microbit.py): Series of MicroPython experiments created by [SparkFun](https://learn.sparkfun.com/tutorials/getting-started-with-micropython-and-the-sparkfun-inventors-kit-for-microbit) to introduce the many functions of the micro:bit.
-
-#### IoT and Networking
    - [Step Counter](https://github.com/samcabano/IoT/blob/master/Choose%20Your%20Adventure/Step_Counter.js): Program that counts steps, displays miles travelled, and plays a tone when 10,000 steps are reached.
 
 ## Analysis and Reflection
