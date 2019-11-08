@@ -19,6 +19,8 @@ To complete this project, I utilized Microsoft's MakeCode For Micro:bit website 
 
 #### Sample Step Counter JavaScript Code:
 ```javascript
+// Step Counter
+
 // micro:bit template code increases step by 1 each shake
 input.onGesture(Gesture.Shake, function () {
     steps += 1
@@ -28,13 +30,26 @@ input.onGesture(Gesture.Shake, function () {
     }
 })
 
+// if B pressed, miles travelled is displayed
+input.onButtonPressed(Button.B, function () {
+    basic.showString(" MI:")
+    basic.showNumber(miles)
+})
+
+let miles = 0
+let steps = 0
+steps = 0
+
+// prompts user to press B to display miles
+basic.showString("Press B for Miles")
+
 // always shows step count
 basic.forever(function () {
     basic.showNumber(steps)
 })
 ```
 
-By utilizing technology, there are infinite possibilities for innovation of products and programs that can improve our daily lives, and even our health!
+By experimenting with technology, there are infinite possibilities for innovation of products and programs that can improve our daily lives, and even our health!
 
 <h3 align="center">
   <a href="https://samcabano.github.io/cabano-profile/">Return to ABOUT ME</a>
